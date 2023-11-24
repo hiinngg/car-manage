@@ -1,6 +1,14 @@
 import './assets/main.css'
-
+import 'amfe-flexible'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import { DropdownMenu, DropdownItem } from 'vant';
+
+
+const app = createApp(App)
+
+app.mount('#app')
+
+app.use(DropdownMenu);
+app.use(DropdownItem);
